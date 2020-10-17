@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grid Templates</title>
     <style>
         html {
             box-sizing: border-box;
@@ -21,14 +21,15 @@
 
         main {
             margin-top: 2em;
-            background: lightgreen;
+            /* background: lightgreen; */
             display: inline-grid;
             width: 600px;
             height: 600px;
             grid-template-areas:
-                    "red red green"
-                    "blue blue blue"
-                    "blue blue blue";
+                    "red red. . . green"
+                    ". . . . . ."
+                    "blue blue blue. . ."
+                    "blue blue blue. . .";
         }
         main div {
             font-size: 2em;
