@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Fractions</title>
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+            margin: 0; 
+            padding: 0;
+        }
+
+        body {
+            text-align: center;
+        }
+        main div {
+            font-size: 2em;
+            color: white;
+            background: grey;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main {
+            margin-top: 2em;
+            background: lightgreen;
+            display: inline-grid;
+            grid-template-columns: 10fr 1fr 5fr;
+            grid-template-rows: repeat(3, 1fr); 
+            width: 600px;
+            height: 600px;
+            /* grid-gap: 1em; */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+        <div class="seven">7</div>
+        <div class="eight">8</div>
+        <div class="nine">9</div>
+    </main>
+</body>
+</html>
