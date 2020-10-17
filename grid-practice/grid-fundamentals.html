@@ -20,6 +20,7 @@
         }
         main div {
             font-size: 2em;
+            border: 1px solid black;
             color: white;
             background: grey;
             border: 2px solid black;
@@ -29,26 +30,38 @@
         }
 
         main {
+            margin-top: 2em;
+            background: lightgreen;
             display: inline-grid;
             grid-template-columns: 200px 200px 200px;
             grid-template-rows: 200px 200px 200px;
             grid-gap: 1em;
         }
 
+        .one {grid-area: 1 / 1 / 2 / 2}
+        .two {grid-area: 1 / 2 / 2 / 3}
+        .three {grid-area: 1 / 3 / 2 / 4}
+        .four {grid-area: 2 / 1 / 3 / 2}
+        .five {grid-area: 2 / 2 / 3 / 3}
+        .six {grid-area: 2 / 3 / 3 / 4}
+        .seven {grid-area: 3 / 1 / 4 / 2}
+        .eight {grid-area: 3 / 2 / 4 / 3}
+        .nine {grid-area: 3 / 3 / 4 / 4}
+
         
     </style>
 </head>
 <body>
     <main>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-        <div>8</div>
-        <div>9</div>
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+        <div class="seven">7</div>
+        <div class="eight">8</div>
+        <div class="nine">9</div>
     </main>
 </body>
 </html>
